@@ -19,7 +19,7 @@ def napravi_narudzbu(proizvodi):
         if not isinstance(proizvod, dict):
             return print("Nije rijecnik")
         if {"naziv", "cijena", "kolicina"}.issubset(proizvod):
-            ...  # return print("Nema kljuceve")
+            return print("Nema kljuceve")
         if (proizvod["kolicina"] < 1):
             return print(f"Proizvod {proizvod.naziv} nije dostupan!")
 
